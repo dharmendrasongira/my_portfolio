@@ -1,6 +1,6 @@
 import { FaPaintBrush } from "react-icons/fa";
-import { SiFiverr } from "react-icons/si";
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaCodeCompare } from "react-icons/fa6";
 import { GiIdea } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -12,14 +12,14 @@ import {
   project3,
   project4,
   project5,
-  project6,
   profile3,
   profile4,
   profile5,
   profile6,
-  figma,
-  sketch,
-  xd,
+  Node,
+  MongoDB,
+  Express,
+  MySQL,
   css,
   html,
   javascript,
@@ -30,6 +30,7 @@ import {
   emailicon,
   messengericon,
   whatsappicon,
+  Gemini,
 } from "./assets";
 
 export const menu = [
@@ -68,165 +69,104 @@ export const services = [
                   is clear, impactful, and aligned with your business goals.`,
   },
 ];
-
 export const projects = [
   {
-    title: "AI Powered School",
+    title: "AI Code Reviewer",
     image: project1,
-    category: "UI/UX",
-    description: `Transforming education with AI, our School UI Design project revolutionizes the 
-                     learning experience. Seamlessly integrating intelligent features, personalized interfaces, 
-                     and intuitive navigation, our design empowers educators and students alike. Experience 
-                     innovation at its finest as we pave the way for a smarter, more efficient educational 
-                     journey.`,
+    category: "MERN Stack",
+    description: `An AI-powered code review system leveraging the Gemini API to analyze, optimize, and enhance code quality with real-time suggestions.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "XD",
-        logo: xd,
-      },
+      { name: "MongoDB", logo: MongoDB },
+      { name: "Express.js", logo: Express },
+      { name: "React.js", logo: react },
+      { name: "Node.js", logo: Node },
+      { name: "Gemini API", logo: Gemini },
     ],
   },
   {
-    title: "E-Commerce Application",
+    title: "EduVed - Study & Book Exchange",
     image: project2,
-    category: "Web",
-    description: `Enhance your online shopping experience with our E-Commerce Application 
-      UI design project. Seamlessly blending aesthetics with functionality, our intuitive 
-      interface offers easy navigation, personalized recommendations, and secure 
-      transactions. Elevate your digital storefront and captivate customers with a visually 
-      stunning design tailored to your brand`,
+    category: "EdTech",
+    description: `A study platform for RGPV BTech students, providing structured notes, PYQs, quizzes, and a seamless book exchange system.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "ReactJs",
-        logo: react,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "CSS",
-        logo: css,
-      },
-      {
-        name: "JavaScript",
-        logo: javascript,
-      },
+      { name: "React.js", logo: react },
+      { name: "Express.js", logo: Express },
+      { name: "Node.js", logo: Node },
+      { name: "MongoDB", logo: MongoDB },
+      { name: "Tailwind CSS", logo: tailwind },
+      { name: "JavaScript", logo: javascript },
     ],
   },
   {
-    title: "Robotic Engineering Web Application",
+    title: "HomiSphere - Real Estate Marketplace",
     image: project3,
-    category: "Web",
-    description: `Unlock the future of robotics with our Robotic Engineering Web Application
-      project. Seamlessly integrating cutting-edge technology, data analytics, 
-      and collaborative tools, our platform empowers engineers to design, simulate, 
-      and optimize robotic systems. Experience innovation at its peak as we redefine the 
-      boundaries of robotic engineering.`,
+    category: "Web App",
+    description: `A modern real estate platform where users can buy, sell, and rent properties. Features an interactive map, location-based search, and in-app chat.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "ReactJs",
-        logo: react,
-      },
-      {
-        name: "Figma",
-        logo: figma,
-      },
-      {
-        name: "Tailwind",
-        logo: tailwind,
-      },
+      { name: "React.js", logo: react },
+      { name: "Node.js", logo: Node },
+      { name: "Express.js", logo: Express },
+      { name: "MongoDB", logo: MongoDB },
+      { name: "Tailwind CSS", logo: tailwind },
     ],
   },
   {
-    title: "Project Management application",
+    title: "TastyBurger - Food Ordering UI",
     image: project4,
-    category: "Apps",
-    description: `Simplify project coordination with our intuitive Project Management application. Track tasks, collaborate in real-time, and streamline workflows effortlessly. With customizable features and robust reporting, stay organized and efficient.
-                     Elevate your project management experience and achieve success with ease.`,
+    category: "Frontend UI",
+    description: `A visually appealing and interactive UI for an online food ordering system. Features include a dynamic menu, engaging visuals, and a responsive design`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "React Native",
-        logo: reactnative,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "CSS",
-        logo: css,
-      },
+      { name: "React.js", logo: react },
+      { name: "Tailwind CSS", logo: tailwind },
+      { name: "JavaScript", logo: javascript },
     ],
   },
   {
-    title: "Mobile bank - App Design",
+    title: "LiveCrick - Cricket Score Tracker",
     image: project5,
-    category: "UI/UX",
-    description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
+    category: "Web App",
+    description: `A real-time cricket score tracking app providing detailed match scorecards, live updates, and an engaging UI for cricket enthusiasts.`,
     demoLink: "https://google.com/",
     stacks: [
-      {
-        name: "Figma",
-        logo: figma,
-      },
-    ],
-  },
-  {
-    title: "Quiz App Development",
-    image: project6,
-    category: "Apps",
-    description: `Elevate engagement and knowledge retention with our Quiz App 
-                    Development project. Seamlessly crafted for interactive learning 
-                    experiences, our app offers customizable quizzes, real-time feedback, 
-                    and captivating visuals. Empower users to test their knowledge anytime,
-                     anywhere, fostering a dynamic learning environment tailored to their 
-                     needs.`,
-    demoLink: "https://google.com/",
-    stacks: [
-      {
-        name: "React Native",
-        logo: reactnative,
-      },
-      {
-        name: "Figma",
-        logo: figma,
-      },
-      {
-        name: "XD",
-        logo: xd,
-      },
-      {
-        name: "Bootstrap",
-        logo: bootstrap,
-      },
+      { name: "React.js", logo: react },
+      { name: "Node.js", logo: Node },
+      { name: "Express.js", logo: Express },
+      { name: "MongoDB", logo: MongoDB },
+      { name: "Tailwind CSS", logo: tailwind },
     ],
   },
 ];
 
+
 export const skills = [
   {
-    title: "UI/UX",
+    title: "Backend Development",
     data: [
       {
-        skill: "Figma",
+        skill: "Node",
         level: "Experienced",
-        logo: figma,
+        logo: Node,
       },
       {
-        skill: "Sketch",
+        skill: "MongoDB",
         level: "Intermediate",
-        logo: sketch,
+        logo: MongoDB,
       },
       {
-        skill: "XD",
+        skill: "Express",
         level: "Intermediate",
-        logo: xd,
+        logo: Express,
       },
+      {
+        skill: "MySQL",
+        level: "Intermediate",
+        logo: MySQL,
+      }
+      
     ],
   },
   {
@@ -249,12 +189,12 @@ export const skills = [
       },
       {
         skill: "Tailwind",
-        level: "Intermediate",
+        level: "Experienced",
         logo: tailwind,
       },
       {
         skill: "Bootstrap",
-        level: "Experienced",
+        level: "Intermediate",
         logo: bootstrap,
       },
       {
@@ -263,8 +203,8 @@ export const skills = [
         logo: react,
       },
       {
-        skill: "React Native",
-        level: "Experienced",
+        skill: "Framer motion",
+        level: "Intermediate",
         logo: reactnative,
       },
     ],
@@ -273,8 +213,8 @@ export const skills = [
 export const contactInfo = [
   {
     name: "Email",
-    value: "mradinuba@gmail.com",
-    link: "mailto:mradinuba@gmail.com",
+    value: "dharmendrasongira259@gmail.com",
+    link: "mailto:dharmendrasongira259@gmail.com",
     icon: emailicon,
     btnIcon: <MdOutlineEmail />,
     color: "rgb(56,115,205)",
@@ -282,41 +222,33 @@ export const contactInfo = [
   {
     name: "Messenger",
     value: "Emmanuel Eze",
-    link: "http://m.me/profile?id=profile-i",
+    link: "",
     icon: messengericon,
     btnIcon: <RiMessengerLine />,
     color: "rgb(139,74,251)",
   },
   {
     name: "WhatsApp",
-    value: "+2348149121918",
-    link: "https://api.whatsapp.com/send?phone=+2348149121918",
+    value: "+919752826161",
+    link: "https://api.whatsapp.com/send?phone=+919752826161",
     icon: whatsappicon,
     btnIcon: <BsWhatsapp />,
     color: "rgb(38,234,112)",
   },
 ];
 export const socialHandles = [
-  {
-    name: "Fiverr",
-    icon: <SiFiverr />,
-    link: "",
-  },
+
   {
     name: "Github",
     icon: <AiFillGithub />,
-    link: "",
+    link: "https://github.com/dharmendrasongira",
   },
   {
     name: "LinkedIn",
     icon: <AiFillLinkedin />,
-    link: "",
+    link: "https://www.linkedin.com/in/dharmendra-songira-8ab218280/",
   },
-  {
-    name: "Youtube",
-    icon: <AiFillYoutube />,
-    link: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
-  },
+
 ];
 
 export const testimonials = [

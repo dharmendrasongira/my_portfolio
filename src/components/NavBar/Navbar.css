@@ -1,0 +1,145 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    left: 50%;
+    top: 37px;
+    z-index: 200;
+    width: 90%;
+    max-width: 2000px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background: rgba(var(--color-ui-2-rgb), 0.5);
+}
+
+.navbar .logo {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    cursor: pointer;
+}
+
+.navbar .logo svg {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .sidebar_middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.navbar .tab {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .buttons_wrapper {
+    gap: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.navbar .hire_btn {
+    
+    overflow: hidden;
+   
+    position: relative;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1.6rem -0.6rem var(--color-ui-2);
+}
+
+.navbar .hire_btn .icon {
+    height: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.2rem var(--color-ui-2);
+     position: absolute;
+    
+    transition: var(--transition);
+}
+
+.navbar .hire_btn:hover .icon {
+    width: calc(100% - 0.6rem);
+}
+
+.navbar .menu,
+.navbar .close_btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.aside_overlay {
+    background: rgba(1, 1, 1, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 201;
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        top: 50px;
+        width: 100%;
+        border-radius: 0px;
+        background: rgba(var(--color-ui-2-rgb), 0.5);
+    }
+
+    .navbar .sidebar {
+        display: flex;
+  align-items: center;
+  justify-content: center;
+        position: fixed;
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        min-height: 100vh;
+        background: rgba(var(--color-ui-2-rgb), 1);
+        top: 0;
+        left: -500px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        z-index: 202;
+        transition: var(--transition);
+        padding-top: 20px;
+    }
+
+    .navbar .sidebar.visible {
+        left: 0;
+    }
+
+    .navbar .sidebar_top {
+        padding: 0 20px;
+        justify-content: flex-end;
+    }
+
+    .navbar .sidebar_middle {
+        padding: 20px;
+        flex: 1;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .navbar .menu,
+    .navbar .close_btn {
+        
+        display: flex;
+    }
+}

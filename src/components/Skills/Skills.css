@@ -1,0 +1,30 @@
+#skills .skill_container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 80px;
+
+}
+
+@media (max-width:1024){
+    #skills .skill_container{
+    grid-template-columns: 100%;
+}
+#skills .skill_container .skill_card{
+ width :80%;
+ padding: 2rem;
+ margin: 0 auto;
+}
+#skill .skill_content{
+    padding:1rem;
+}
+
+}
+
+@media (max-width:600px){
+    #skills .skill_container{
+    gap:1rem;
+}
+#skills .skill_container .skill_card{
+ width :80%;
+ padding: 2rem 1rem;
+}}

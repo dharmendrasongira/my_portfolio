@@ -1,0 +1,98 @@
+.project_card{
+    position: relative;
+    box-shadow: var(--card-primary-shadow);
+    clip-path: var(--polygon);
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    height: fit-content;
+}
+.project_card .project_card-top{
+    background: var(--color-ui-2);
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    clip-path: var(--polygon);
+}
+
+.project_card .picture{
+    height: 300px;
+    background: var(--color-ui-2);
+    border-radius: 1rem;
+    overflow: hidden;
+    }
+
+    .project_card .picture img{
+    transition: var(--transition);
+    }
+    .project_card .picture img:hover{
+    transform: scale(1.1);
+    }
+    .project_card .picture_card-bottom{
+        margin-top:1rem;
+        position:relative;
+        z-index: 2;
+        }
+
+    .project_card .project_info{
+      gap:0.5rem;
+    }
+    .project_card .project_info img{
+      width: 2.25rem;
+      height:2.25rem;
+      min-width: 2.25rem;
+      min-height:2.25rem;
+      max-height: 2.25rem;
+      max-width: 2.25rem;
+      background: var(--color-ui-2);
+      border-radius:5px;
+      overflow: hidden;
+    }
+
+    .project_card .title{
+        font-size: 16px;
+        margin-top: 15px;
+        
+    }
+   .project_card .category{
+        font-size: 12px;
+   
+    }
+    .project_card .description{
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient:vertical;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp:4;
+        line-clamp: 3;
+        margin: 8px 0;
+        font-family: var(--font-primary);
+        letter-spacing: 0.5px;
+    
+    }
+
+    .project_card .stacks{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .project_card .stack{
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        background: rgba(var(--color-primary-rgb),0.3);
+        box-shadow: var(--card-primary-shadow);
+        clip-path: var(--polygon);
+        transition: var(--transition);
+        cursor: pointer;
+    }
+
+    .project_card .stack:hover{
+        transform: scale(2);
+    }
+
+    .project_card .stack img{
+        object-fit: contain;
+    }

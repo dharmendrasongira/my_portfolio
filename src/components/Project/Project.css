@@ -1,0 +1,19 @@
+#projects .projects_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Increased for better spacing */
+    padding: 20px;
+}
+
+
+@media (max-width: 900px) {
+    #projects .projects_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    #projects .projects_container {
+        grid-template-columns: 1fr;
+    }
+}
