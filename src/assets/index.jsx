@@ -6,6 +6,10 @@ export { default as profile5 } from "./profile-5.jpeg";
 export { default as profile6 } from "./profile-6.jpeg";
 
 //Projects images export
+export { default as mockNinjaCover } from "./mock-ninja.jpg";
+export { default as healthcareMobileCover } from "./cover-healthcare-mobile.svg";
+export { default as healthcareWebCover } from "./cover-healthcare-web.svg";
+export { default as aiHiringCover } from "./cover-ai-hiring.svg";
 export { default as project1 } from "./project-1.png";
 export { default as project2 } from "./project-2.png";
 export { default as project3 } from "./project-3.jpg";
@@ -29,3 +33,10 @@ export { default as emailicon } from "./icons/email.png";
 export { default as messengericon } from "./icons/messenger.png";
 export { default as whatsappicon } from "./icons/whatsapp.png";
 export { default as Gemini } from "./icons/Gemini.png";
+export { default as typescript } from "./icons/typescript.svg";
+export { default as redux } from "./icons/redux.svg";
+export { default as git } from "./icons/git.svg";
+export { default as n8n } from "./icons/n8n.svg";
+export { default as java } from "./icons/java.svg";
+export { default as linkedinicon } from "./icons/linkedin.svg";
+export { default as educationicon } from "./icons/education.svg";

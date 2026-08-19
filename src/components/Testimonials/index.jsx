@@ -1,15 +1,15 @@
 import "./Testimonials.css";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { testimonials } from "../../data";
+import { achievements } from "../../data";
 import { Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <section id="testimonial">
+    <section id="achievements">
       <div className="section_wrapper">
         <div className="section_header">
-          <h2 className="shine Topic">Testimonial</h2>
+          <h2 className="shine Topic">Certifications &amp; Achievements</h2>
         </div>
         <Swiper
           slidesPerView={1} // Fixed typo
@@ -20,8 +20,8 @@ const Testimonials = () => {
           modules={[Autoplay]}
           breakpoints={{ 700: { slidesPerView: 2 } }} // Fixed spelling
         >
-          {testimonials?.length > 0 ? (
-            testimonials.map(({ avatar, name, review }, index) => (
+          {achievements?.length > 0 ? (
+            achievements.map(({ avatar, name, review }, index) => (
               <SwiperSlide className="card testimonial" key={index}>
                 <div className="avatar">
                   <img src={avatar} alt={name} />
@@ -31,7 +31,7 @@ const Testimonials = () => {
               </SwiperSlide>
             ))
           ) : (
-            <p>No testimonials available</p>
+            <p>No achievements available</p>
           )}
         </Swiper>
       </div>

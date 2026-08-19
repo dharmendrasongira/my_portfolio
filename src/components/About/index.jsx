@@ -31,7 +31,7 @@ const About = () => {
             I am <span className="color_primary">Dharmendra Songira</span>
           </h1>
           <p className="text_muted description">
-            I am a passionate software engineer with a strong background in user experience design. My expertise lies in creating intuitive, user-centric solutions that enhance the overall user experience. I am constantly seeking ways to improve my skills and collaborate with talented team members to create innovative solutions.
+            I am a Junior Software Engineer at Virim Infotech, Indore, working across mobile and web. I build cross-platform healthcare applications with React Native and TypeScript, along with the companion React.js web platform, using reusable hook-based components and responsive layouts. Alongside product work, I build AI automation pipelines in n8n that parse resumes and score candidates with an LLM, cutting manual screening time by 70%. I am currently completing my B.Tech in Information Technology at Acropolis Institute of Technology and Research, and I enjoy turning ideas into fast, reliable products end to end.
           </p>
         </div>
       </div>

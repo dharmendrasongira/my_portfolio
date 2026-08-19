@@ -5,7 +5,7 @@ gap: 80px;
 
 }
 
-@media (max-width:1024){
+@media (max-width:1024px){
     #skills .skill_container{
     grid-template-columns: 100%;
 }
@@ -14,7 +14,7 @@ gap: 80px;
  padding: 2rem;
  margin: 0 auto;
 }
-#skill .skill_content{
+#skills .skill_content{
     padding:1rem;
 }
 

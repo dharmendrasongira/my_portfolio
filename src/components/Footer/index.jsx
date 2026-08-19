@@ -25,7 +25,7 @@ const Footer = () => {
         </ul>
         <SocialHandles />
         <div className="copyright">
-          <h3>Copyright &copy; All rights reserved - 2024</h3>
+          <h3>Copyright &copy; All rights reserved - 2026</h3>
           <p className="text_muted">Built with love by Dharmendra Songira</p>
         </div>
         <div className="base_logo">

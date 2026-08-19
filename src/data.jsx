@@ -1,21 +1,16 @@
-import { FaPaintBrush } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaCodeCompare } from "react-icons/fa6";
 import { GiIdea } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import {
-  project1,
   project2,
-  project3,
-  project4,
-  project5,
-  profile3,
-  profile4,
-  profile5,
-  profile6,
+  mockNinjaCover,
+  healthcareMobileCover,
+  healthcareWebCover,
+  aiHiringCover,
   Node,
   MongoDB,
   Express,
@@ -24,58 +19,64 @@ import {
   html,
   javascript,
   tailwind,
-  bootstrap,
   react,
   reactnative,
+  typescript,
+  redux,
+  git,
+  n8n,
+  java,
   emailicon,
-  messengericon,
+  linkedinicon,
   whatsappicon,
+  educationicon,
   Gemini,
 } from "./assets";
 
 export const menu = [
   { name: "About" },
   { name: "Services" },
-  { name: "Skill" },
+  { name: "Skills" },
   { name: "Projects" },
-  { name: "Testimonial" },
+  { name: "Achievements" },
   { name: "Contact" },
 ];
 
 export const services = [
   {
-    title: "UI/UX Design",
-    icon: <FaPaintBrush />,
-    description: `Crafting visually stunning and user-centric designs that ensure seamless user experiences. 
-                  From wireframes to high-fidelity prototypes, I focus on creating intuitive interfaces that 
-                  blend creativity and functionality, enhancing engagement and usability.`,
+    title: "Mobile App Development",
+    icon: <FaMobileAlt />,
+    description: `Building cross-platform mobile applications with React Native and TypeScript. 
+                  I create reusable, hook-based components and responsive layouts that deliver a 
+                  consistent, user-friendly experience on both Android and iOS from a single codebase.`,
   },
   {
     title: "Web Development",
     icon: <FaCodeCompare />,
     color: "blueviolet",
     colorRGB: "138, 43, 226",
-    description: `Building responsive, dynamic, and high-performance websites tailored to your needs. 
-    Using modern technologies like React, Node.js, and more, I ensure your site is optimized 
-    for speed, scalability, and accessibility, delivering a robust online presence.`,
+    description: `Developing responsive, dynamic and high-performance web applications using React.js, 
+    Redux Toolkit, Node.js, Express.js and MongoDB. I focus on clean state management, optimized API 
+    calls and fast load times so the product stays scalable and accessible.`,
   },
   {
-    title: "Content Creation",
+    title: "AI & Workflow Automation",
     icon: <GiIdea />,
     color: "var(--color-success)",
     colorRGB: "var(--color-success-rgb)",
-    description: `Producing compelling digital content that resonates with your audience. From blogs 
-                  and technical documentation to engaging website copy, I ensure your brand's message 
-                  is clear, impactful, and aligned with your business goals.`,
+    description: `Designing AI-powered automation pipelines with n8n and LLM APIs. From resume parsing 
+                  and candidate scoring to dynamic content generation, I connect your tools into 
+                  workflows that remove repetitive manual work and speed up decisions.`,
   },
 ];
 export const projects = [
   {
-    title: "AI Code Reviewer",
-    image: project1,
+    title: "Mock Ninja - AI Interview Platform",
+    image: mockNinjaCover,
     category: "MERN Stack",
-    description: `An AI-powered code review system leveraging the Gemini API to analyze, optimize, and enhance code quality with real-time suggestions.`,
-    demoLink: "https://google.com/",
+    description: `A full-stack AI-powered mock interview platform with real-time interview simulation, answer analysis and candidate performance tracking through facial gesture and eye-contact analysis. Load times reduced by 20% through API and frontend optimization.`,
+    demoLink: "https://mock-ninja-client.onrender.com/",
+    repoLink: "",
     stacks: [
       { name: "MongoDB", logo: MongoDB },
       { name: "Express.js", logo: Express },
@@ -85,58 +86,55 @@ export const projects = [
     ],
   },
   {
-    title: "EduVed - Study & Book Exchange",
+    title: "Eduved - Academic Resource Platform",
     image: project2,
     category: "EdTech",
-    description: `A study platform for RGPV BTech students, providing structured notes, PYQs, quizzes, and a seamless book exchange system.`,
-    demoLink: "https://google.com/",
+    description: `A full-stack academic platform where students upload, browse and download notes, papers and study resources organized by subject and semester, with structured categorization and search for faster discoverability.`,
+    demoLink: "https://eduved-frontend.onrender.com/",
+    repoLink: "",
     stacks: [
       { name: "React.js", logo: react },
+      { name: "Redux Toolkit", logo: redux },
       { name: "Express.js", logo: Express },
       { name: "Node.js", logo: Node },
       { name: "MongoDB", logo: MongoDB },
       { name: "Tailwind CSS", logo: tailwind },
+    ],
+  },
+  {
+    title: "Healthcare Mobile Application",
+    image: healthcareMobileCover,
+    category: "React Native App",
+    description: `A cross-platform healthcare mobile app built at Virim Infotech using React Native and TypeScript, with reusable hook-based components that display health reports, records and related patient data through a responsive interface.`,
+    demoLink: "",
+    stacks: [
+      { name: "React Native", logo: reactnative },
+      { name: "TypeScript", logo: typescript },
       { name: "JavaScript", logo: javascript },
     ],
   },
   {
-    title: "HomiSphere - Real Estate Marketplace",
-    image: project3,
+    title: "Healthcare Web Platform",
+    image: healthcareWebCover,
     category: "Web App",
-    description: `A modern real estate platform where users can buy, sell, and rent properties. Features an interactive map, location-based search, and in-app chat.`,
-    demoLink: "https://google.com/",
+    description: `A companion web-based healthcare platform built with React.js that mirrors the mobile app's functionality, giving patients and staff seamless access to health reports and records across devices.`,
+    demoLink: "",
     stacks: [
       { name: "React.js", logo: react },
-      { name: "Node.js", logo: Node },
-      { name: "Express.js", logo: Express },
-      { name: "MongoDB", logo: MongoDB },
-      { name: "Tailwind CSS", logo: tailwind },
-    ],
-  },
-  {
-    title: "TastyBurger - Food Ordering UI",
-    image: project4,
-    category: "Frontend UI",
-    description: `A visually appealing and interactive UI for an online food ordering system. Features include a dynamic menu, engaging visuals, and a responsive design`,
-    demoLink: "https://google.com/",
-    stacks: [
-      { name: "React.js", logo: react },
-      { name: "Tailwind CSS", logo: tailwind },
+      { name: "TypeScript", logo: typescript },
       { name: "JavaScript", logo: javascript },
     ],
   },
   {
-    title: "LiveCrick - Cricket Score Tracker",
-    image: project5,
-    category: "Web App",
-    description: `A real-time cricket score tracking app providing detailed match scorecards, live updates, and an engaging UI for cricket enthusiasts.`,
-    demoLink: "https://google.com/",
+    title: "AI Hiring Automation Pipeline",
+    image: aiHiringCover,
+    category: "AI Automation",
+    description: `An n8n-based AI hiring automation pipeline that parses resumes, scores candidates against a job description using an LLM and generates ranked shortlists, cutting manual screening time by 70%.`,
+    demoLink: "",
     stacks: [
-      { name: "React.js", logo: react },
-      { name: "Node.js", logo: Node },
-      { name: "Express.js", logo: Express },
-      { name: "MongoDB", logo: MongoDB },
-      { name: "Tailwind CSS", logo: tailwind },
+      { name: "n8n", logo: n8n },
+      { name: "LLM API", logo: Gemini },
+      { name: "JavaScript", logo: javascript },
     ],
   },
 ];
@@ -144,34 +142,38 @@ export const projects = [
 
 export const skills = [
   {
-    title: "Backend Development",
+    title: "Frontend & Mobile",
     data: [
       {
-        skill: "Node",
+        skill: "React.js",
         level: "Experienced",
-        logo: Node,
+        logo: react,
       },
       {
-        skill: "MongoDB",
-        level: "Intermediate",
-        logo: MongoDB,
+        skill: "React Native",
+        level: "Experienced",
+        logo: reactnative,
       },
       {
-        skill: "Express",
-        level: "Intermediate",
-        logo: Express,
+        skill: "JavaScript",
+        level: "Experienced",
+        logo: javascript,
       },
       {
-        skill: "MySQL",
+        skill: "TypeScript",
         level: "Intermediate",
-        logo: MySQL,
-      }
-      
-    ],
-  },
-  {
-    title: "Frontend Development",
-    data: [
+        logo: typescript,
+      },
+      {
+        skill: "Redux Toolkit",
+        level: "Intermediate",
+        logo: redux,
+      },
+      {
+        skill: "Tailwind",
+        level: "Experienced",
+        logo: tailwind,
+      },
       {
         skill: "HTML",
         level: "Experienced",
@@ -182,30 +184,45 @@ export const skills = [
         level: "Experienced",
         logo: css,
       },
+    ],
+  },
+  {
+    title: "Backend, Databases & Tools",
+    data: [
       {
-        skill: "JavaScript",
+        skill: "Node.js",
         level: "Experienced",
-        logo: javascript,
+        logo: Node,
       },
       {
-        skill: "Tailwind",
-        level: "Experienced",
-        logo: tailwind,
-      },
-      {
-        skill: "Bootstrap",
+        skill: "Express.js",
         level: "Intermediate",
-        logo: bootstrap,
+        logo: Express,
       },
       {
-        skill: "React",
-        level: "Experienced",
-        logo: react,
-      },
-      {
-        skill: "Framer motion",
+        skill: "MongoDB",
         level: "Intermediate",
-        logo: reactnative,
+        logo: MongoDB,
+      },
+      {
+        skill: "MySQL",
+        level: "Intermediate",
+        logo: MySQL,
+      },
+      {
+        skill: "Java",
+        level: "Intermediate",
+        logo: java,
+      },
+      {
+        skill: "Git & GitHub",
+        level: "Experienced",
+        logo: git,
+      },
+      {
+        skill: "n8n",
+        level: "Intermediate",
+        logo: n8n,
       },
     ],
   },
@@ -220,16 +237,16 @@ export const contactInfo = [
     color: "rgb(56,115,205)",
   },
   {
-    name: "Messenger",
-    value: "Emmanuel Eze",
-    link: "",
-    icon: messengericon,
-    btnIcon: <RiMessengerLine />,
-    color: "rgb(139,74,251)",
+    name: "LinkedIn",
+    value: "Dharmendra Songira",
+    link: "https://www.linkedin.com/in/dharmendra-songira-8ab218280/",
+    icon: linkedinicon,
+    btnIcon: <AiFillLinkedin />,
+    color: "rgb(10,102,194)",
   },
   {
     name: "WhatsApp",
-    value: "+919752826161",
+    value: "+91 9752826161",
     link: "https://api.whatsapp.com/send?phone=+919752826161",
     icon: whatsappicon,
     btnIcon: <BsWhatsapp />,
@@ -251,33 +268,29 @@ export const socialHandles = [
 
 ];
 
-export const testimonials = [
+export const achievements = [
   {
-    avatar: profile3,
-    name: "Samuel Eze",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+    avatar: MySQL,
+    name: "NPTEL - Database Management System",
+    review: `Certification covering relational database design, normalization, transactions and SQL
+            query optimization, applied directly in projects built on MySQL and MongoDB.`,
   },
   {
-    avatar: profile4,
-    name: "Emmanuel Joseph",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+    avatar: java,
+    name: "NPTEL - Data Structures & Algorithms using Java",
+    review: `Certification in data structures and algorithms using Java, scored 71%. Strengthened
+            problem solving around arrays, trees, graphs, sorting and complexity analysis.`,
   },
   {
-    avatar: profile5,
-    name: "Gloria Chiwendu",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+    avatar: react,
+    name: "Advanced MERN Development - Infosys Springboard",
+    review: `Full-stack MERN application development covering React.js, Node.js, Express.js and MongoDB,
+            including REST API design, authentication and production-ready project structure.`,
   },
   {
-    avatar: profile6,
-    name: "Precious Stone",
-    review: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea`,
+    avatar: educationicon,
+    name: "B.Tech - Information Technology",
+    review: `Acropolis Institute of Technology and Research, Indore (2022 - 2026), CGPA 7.54.
+            Coursework in OOPs, DBMS, Operating Systems and Computer Networks.`,
   },
 ];

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141b2b"/>
+      <stop offset="1" stop-color="#0d1017"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2f6dff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2f6dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#bgA)"/>
+  <circle cx="600" cy="180" r="300" fill="url(#glowA)"/>
+  <g opacity="0.12" stroke="#8fb4ff" stroke-width="1.5" fill="none">
+    <path d="M0 560h800M0 620h800M0 500h800"/>
+  </g>
+  <g transform="translate(288 150)">
+    <rect x="0" y="0" width="224" height="400" rx="34" fill="#182238" stroke="#3f5f9e" stroke-width="3"/>
+    <rect x="14" y="16" width="196" height="368" rx="24" fill="#0f1725"/>
+    <rect x="88" y="26" width="48" height="8" rx="4" fill="#3f5f9e"/>
+    <rect x="34" y="62" width="156" height="60" rx="12" fill="#1b2a45"/>
+    <path d="M56 92h16l8-14 12 28 10-20 8 6h34" stroke="#4ade80" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="34" y="142" width="72" height="72" rx="12" fill="#1b2a45"/>
+    <rect x="118" y="142" width="72" height="72" rx="12" fill="#1b2a45"/>
+    <rect x="34" y="232" width="156" height="16" rx="8" fill="#24365a"/>
+    <rect x="34" y="262" width="120" height="16" rx="8" fill="#24365a"/>
+    <rect x="34" y="292" width="140" height="16" rx="8" fill="#24365a"/>
+    <rect x="34" y="330" width="156" height="34" rx="17" fill="#2f6dff"/>
+  </g>
+  <text x="400" y="616" fill="#ffffff" font-size="40" font-weight="700" text-anchor="middle">Healthcare Mobile App</text>
+  <text x="400" y="656" fill="#8fa3c8" font-size="24" font-weight="500" text-anchor="middle">React Native · TypeScript</text>
+</svg>

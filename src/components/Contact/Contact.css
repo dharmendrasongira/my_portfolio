@@ -201,3 +201,21 @@ input:focus, textarea:focus {
         flex-direction: column;
     }
 }
+
+#contact .submit_btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#contact .form_status{
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#contact .form_status.success{
+    color: var(--color-success, #26ea70);
+}
+
+#contact .form_status.error{
+    color: #ff6b6b;
+}
