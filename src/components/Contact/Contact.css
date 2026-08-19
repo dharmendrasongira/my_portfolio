@@ -151,25 +151,13 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-#contact .submit_btn:hover .icon {
-    animation: fly 0.6s ease-in-out infinite alternate; 
-}
-
 @keyframes fly {
     from {
-        transform: translateY(0.1rem);
+        transform: translateY(2px) rotate(0deg);
     }
     to {
-        transform: translateY(-0.5rem);
+        transform: translateY(-8px) rotate(-12deg);
     }
-}
-
-#contact .submit_btn:hover svg {
-    transform: translateX(1.2rem) rotate(45deg) scale(1.1);
-}
-
-#contact .submit_btn:hover span {
-    transform: translateX(8rem);
 }
 
 /* Responsive Fixes */
@@ -225,7 +213,7 @@ input:focus, textarea:focus {
 }
 
 #contact .submit_btn:hover:not(:disabled) .icon{
-    transform: translate(4px, -8px) rotate(-12deg);
+    animation: fly 0.7s ease-in-out infinite alternate;
 }
 
 #contact .submit_btn:disabled{
