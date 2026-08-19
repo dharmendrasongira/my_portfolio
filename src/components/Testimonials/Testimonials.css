@@ -1,4 +1,4 @@
-#testimonial .testimonial {
+#achievements .testimonial {
     text-align: center;
     padding: 60px 40px;
     border-radius: var(--border-radius-3);
@@ -6,7 +6,7 @@
     margin-bottom: 200px;
 }
 
-#testimonial .avatar {
+#achievements .avatar {
     width: 10rem;
     height: 10rem;
     overflow: hidden;
@@ -17,7 +17,7 @@
     box-sizing: border-box;  /* Added for correct sizing */
 }
 
-#testimonial .review {  /* Fixed selector */
+#achievements .review {  /* Fixed selector */
     font-weight: 400;
     font-size: 15px;
 }

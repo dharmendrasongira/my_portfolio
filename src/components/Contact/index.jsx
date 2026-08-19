@@ -4,8 +4,44 @@ import Pyramid from "../../ui/Pyramid";
 import { contactInfo } from "../../data";
 import SocialHandles from "../../ui/SocialHandles";
 import { BsFillSendFill } from "react-icons/bs";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const Contact = () => {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState({ state: "idle", message: "" });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      setStatus({
+        state: "error",
+        message: "Email service is not configured yet. Please use email or WhatsApp above.",
+      });
+      return;
+    }
+
+    setStatus({ state: "sending", message: "" });
+
+    try {
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+        publicKey: PUBLIC_KEY,
+      });
+      formRef.current.reset();
+      setStatus({ state: "success", message: "Thanks! Your message has been sent." });
+    } catch (error) {
+      setStatus({
+        state: "error",
+        message: "Something went wrong. Please try again or reach out on WhatsApp.",
+      });
+    }
+  };
+
   return (
     <section id="contact">
       <div className="section_wrapper">
@@ -42,7 +78,7 @@ const Contact = () => {
             </div>
             <SocialHandles />
           </div>
-          <form action="">
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Your full name"
@@ -61,10 +97,17 @@ const Contact = () => {
               name="message"
               required
             />
-            <button type="button" className="btn flex_center submit_btn">
+            <button
+              type="submit"
+              className="btn flex_center submit_btn"
+              disabled={status.state === "sending"}
+            >
               <div className="icon"><BsFillSendFill /></div>
-              <span>Send Now</span>
+              <span>{status.state === "sending" ? "Sending..." : "Send Now"}</span>
             </button>
+            {status.message && (
+              <p className={`form_status ${status.state}`}>{status.message}</p>
+            )}
           </form>
         </div>
       </div>

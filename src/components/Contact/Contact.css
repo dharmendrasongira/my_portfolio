@@ -151,25 +151,23 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-#contact .submit_btn:hover .icon {
-    animation: fly 0.6s ease-in-out infinite alternate; 
-}
-
 @keyframes fly {
-    from {
-        transform: translateY(0.1rem);
+    0% {
+        transform: translateX(0);
+        opacity: 1;
     }
-    to {
-        transform: translateY(-0.5rem);
+    55% {
+        transform: translateX(26px);
+        opacity: 0;
     }
-}
-
-#contact .submit_btn:hover svg {
-    transform: translateX(1.2rem) rotate(45deg) scale(1.1);
-}
-
-#contact .submit_btn:hover span {
-    transform: translateX(8rem);
+    56% {
+        transform: translateX(-18px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Responsive Fixes */
@@ -200,4 +198,48 @@ input:focus, textarea:focus {
     #contact .contact_content {
         flex-direction: column;
     }
+}
+
+#contact .submit_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 1;
+    background: var(--color-primary);
+    transition: var(--transition);
+}
+
+#contact .submit_btn:hover:not(:disabled){
+    box-shadow: 0 10px 24px -8px rgba(var(--color-primary-rgb), 0.8);
+}
+
+#contact .submit_btn .icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: transform 0.35s ease-in-out;
+}
+
+#contact .submit_btn:hover:not(:disabled) .icon{
+    animation: fly 1s ease-in-out infinite;
+}
+
+#contact .submit_btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#contact .form_status{
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#contact .form_status.success{
+    color: var(--color-success, #26ea70);
+}
+
+#contact .form_status.error{
+    color: #ff6b6b;
 }

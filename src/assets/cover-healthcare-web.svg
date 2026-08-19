@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Poppins, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2c"/>
+      <stop offset="1" stop-color="#0c1016"/>
+    </linearGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#bgB)"/>
+  <circle cx="200" cy="200" r="300" fill="url(#glowB)"/>
+  <g transform="translate(112 150)">
+    <rect x="0" y="0" width="576" height="368" rx="20" fill="#16233a" stroke="#31527f" stroke-width="3"/>
+    <rect x="0" y="0" width="576" height="46" rx="20" fill="#1d2f4d"/>
+    <rect x="0" y="30" width="576" height="16" fill="#1d2f4d"/>
+    <circle cx="30" cy="23" r="7" fill="#ef5f56"/>
+    <circle cx="54" cy="23" r="7" fill="#f5bf4f"/>
+    <circle cx="78" cy="23" r="7" fill="#61c454"/>
+    <rect x="24" y="72" width="130" height="272" rx="14" fill="#0f1a2c"/>
+    <rect x="44" y="96" width="90" height="14" rx="7" fill="#2b4470"/>
+    <rect x="44" y="126" width="70" height="14" rx="7" fill="#2b4470"/>
+    <rect x="44" y="156" width="86" height="14" rx="7" fill="#2b4470"/>
+    <rect x="44" y="186" width="60" height="14" rx="7" fill="#2b4470"/>
+    <rect x="176" y="72" width="376" height="120" rx="14" fill="#0f1a2c"/>
+    <path d="M200 160l50-42 40 26 44-56 40 34 44-48 50 40" stroke="#22d3ee" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="176" y="212" width="180" height="132" rx="14" fill="#0f1a2c"/>
+    <rect x="372" y="212" width="180" height="132" rx="14" fill="#0f1a2c"/>
+    <rect x="200" y="244" width="120" height="14" rx="7" fill="#2b4470"/>
+    <rect x="200" y="274" width="92" height="14" rx="7" fill="#2b4470"/>
+    <rect x="396" y="244" width="120" height="14" rx="7" fill="#2b4470"/>
+    <rect x="396" y="274" width="92" height="14" rx="7" fill="#2b4470"/>
+  </g>
+  <text x="400" y="616" fill="#ffffff" font-size="40" font-weight="700" text-anchor="middle">Healthcare Web Platform</text>
+  <text x="400" y="656" fill="#8fa3c8" font-size="24" font-weight="500" text-anchor="middle">React.js · TypeScript</text>
+</svg>

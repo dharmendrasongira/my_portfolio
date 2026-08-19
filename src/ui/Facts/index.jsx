@@ -6,13 +6,13 @@ import Odometer from "react-odometerjs";
 const Facts = () => {
   const [experience, setExperience] = useState(0);
   const [projects, setProjects] = useState(0);
-  const [clients, setClients] = useState(0);
+  const [certifications, setCertifications] = useState(0);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setExperience(1);
-      setProjects(10);
-      setClients(3);
+      setProjects(5);
+      setCertifications(3);
     }, 3000);
 
     return () => clearTimeout(timeoutId);
@@ -20,8 +20,8 @@ const Facts = () => {
 
   const factsData = [
     { value: experience, label: "Years of Experience" },
-    { value: projects, label: "Completed Projects" },
-    { value: clients, label: "Satisfied Clients" },
+    { value: projects, label: "Projects Delivered" },
+    { value: certifications, label: "Certifications" },
   ];
 
   return (

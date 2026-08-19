@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { AiFillGithub } from "react-icons/ai";
 import "./ProjectCard.css";
 
-const ProjectCard = ({ title, category, image, description, stacks }) => {
+const ProjectCard = ({ title, category, image, description, stacks, demoLink, repoLink }) => {
   return (
     <div className="card project_card">
       <div className="project_card-top">
@@ -17,6 +19,32 @@ const ProjectCard = ({ title, category, image, description, stacks }) => {
         <div >
           <h3 className="title">{title}</h3>
           <p className="text_muted category">{category}</p>
+        </div>
+        <div className="project_links">
+          {repoLink && (
+            <a
+              href={repoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repo_link"
+              aria-label={`Open source code of ${title}`}
+            >
+              <AiFillGithub />
+              <span>Code</span>
+            </a>
+          )}
+          {demoLink && (
+            <a
+              href={demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="demo_link"
+              aria-label={`Open live demo of ${title}`}
+            >
+              <span>Live Demo</span>
+              <FaArrowUpRightFromSquare />
+            </a>
+          )}
         </div>
     </div>
           <p className="text_muted description">{description}</p>
