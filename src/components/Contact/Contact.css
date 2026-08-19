@@ -152,11 +152,21 @@ input:focus, textarea:focus {
 }
 
 @keyframes fly {
-    from {
-        transform: translateY(2px) rotate(0deg);
+    0% {
+        transform: translateX(0);
+        opacity: 1;
     }
-    to {
-        transform: translateY(-8px) rotate(-12deg);
+    55% {
+        transform: translateX(26px);
+        opacity: 0;
+    }
+    56% {
+        transform: translateX(-18px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -213,7 +223,7 @@ input:focus, textarea:focus {
 }
 
 #contact .submit_btn:hover:not(:disabled) .icon{
-    animation: fly 0.7s ease-in-out infinite alternate;
+    animation: fly 1s ease-in-out infinite;
 }
 
 #contact .submit_btn:disabled{
