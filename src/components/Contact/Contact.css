@@ -202,6 +202,32 @@ input:focus, textarea:focus {
     }
 }
 
+#contact .submit_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 1;
+    background: var(--color-primary);
+    transition: var(--transition);
+}
+
+#contact .submit_btn:hover:not(:disabled){
+    box-shadow: 0 10px 24px -8px rgba(var(--color-primary-rgb), 0.8);
+}
+
+#contact .submit_btn .icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: transform 0.35s ease-in-out;
+}
+
+#contact .submit_btn:hover:not(:disabled) .icon{
+    transform: translate(4px, -8px) rotate(-12deg);
+}
+
 #contact .submit_btn:disabled{
     opacity: 0.6;
     cursor: not-allowed;
